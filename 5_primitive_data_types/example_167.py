@@ -1,0 +1,9 @@
+# file name: example_167.py
+
+a = [1, 2, 3]
+
+b = [1, 2, 3]
+
+print(a == b)  # True  (same values)
+
+print(a is b)  # False (different objects)

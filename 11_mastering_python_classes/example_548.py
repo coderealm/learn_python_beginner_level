@@ -1,0 +1,13 @@
+# file name: example_548.py
+
+class Person:
+
+    def __init__(self, name, age):
+
+        self.name = name
+
+        self.age = age
+
+p = Person("Alice", 25)
+
+p.city = "NY"   # Allowed
