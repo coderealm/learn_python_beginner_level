@@ -694,7 +694,563 @@ print(numbers)  # Output: [1, 2, 3, 4]
 
 A strong understanding of variable scope is essential for writing reliable, efficient, and professional Python code.
 
+--------------------------------------
+# Chapter 2
 
+**Chapter 2: Installing Visual Studio Code and Python**
+=======================================================
+
+This chapter walks you step by step through installing Visual Studio Code (VS Code) and Python on the three most common operating systems. It’s written for beginners, follow the steps in order, and you’ll be ready to start coding.The code editor, Python, and other tools set up on your computer to help you write code are collectively referred to as your development environment. You may skip this chapter if you already have a code editor (such as VS Code, Sublime Text, or Atom) and Python 3.x installed.What You’ll Install
+
+    • Visual Studio Code (VS Code) – a free, lightweight code editor
+
+    • Python – a popular, beginner-friendly programming language
+
+    • Python extension for VS Code – adds syntax highlighting, running code, debugging, and more
+
+Official sites:
+
+    • VS Code: [https://code.visualstudio.com](https://code.visualstudio.com) 
+
+    • Python: [https://www.python.org](https://www.python.org) 
+
+**Installing Visual Studio Code**
+---------------------------------
+
+### **Windows**
+
+Open your browser and go to:
+
+[https://code.visualstudio.com](https://code.visualstudio.com) 
+
+    1. Click Download for Windows.
+
+    2. Run the downloaded file (VSCodeUserSetup-x64.exe).
+
+    3. In the installer:
+
+        ◦ Accept the license agreement
+
+        ◦ Keep default options
+
+        ◦ Check:
+
+            ▪ “Add to PATH”
+
+            ▪ “Open with Code” (optional but useful)
+
+    4. Click Install, then Finish.  VS Code is now installed.
+
+5\. Open VS Code from the Start Menu.
+
+### **macOS**
+
+Open your browser and go to:
+
+[https://code.visualstudio.com](https://code.visualstudio.com) 
+
+    1. Click Download for macOS.
+
+    2. Open the downloaded .zip file.
+
+    3. Drag Visual Studio Code.app into the Applications folder.
+
+    4. Open Applications ➜ Visual Studio Code.
+
+    5. If macOS warns about security, click Open.
+
+VS Code is now installed.
+
+### **Ubuntu Linux**
+
+    1. Open your browser and go to:
+
+[https://code.visualstudio.com](https://code.visualstudio.com) 
+
+    2. Set your web browser to download to your download folder.
+
+    3. Click Download for Linux ➜ .deb. 
+
+    4. Open the Terminal and Install VS Code (Ubuntu)
+
+        1. Open the Terminal
+
+            1. Click the Show Applications button (usually at the bottom-left).
+
+            2. Type Terminal.
+
+            3. Click Terminal to open it.
+
+            4. A window with text will appear. This is called the Terminal.
+
+        2. Go to the Downloads Folder
+
+            1. When you downloaded VS Code, it was saved in your Downloads folder.
+
+            2. Click inside the Terminal window.
+
+            3. Type this exactly cd Downloads as in the screenshot below and Press Enter. on your keyboard
+
+**Install VS Code**
+
+    1. Now type this command sudo apt install ./code\_\*.deb as seen in the screen below and Press Enter on your keyboard
+
+    2. You may be asked for your password.
+
+        ◦ When typing the password, nothing will appear on the screen (this is normal).
+
+        ◦ Type your password and press Enter.
+
+What this command does
+
+    • sudo  - allows a user to temporarily run commands with administrator (root) privileges, such as installing software
+
+    • apt install -  installs a program or software
+
+    • code\_\*.deb - the VS Code installer file you downloaded
+
+If you see the question :
+
+Do you want to continue? \[Y/n\]
+
+    • Type Y and press Enter.
+
+    • Once it finishes:
+
+    • VS Code is installed
+
+Open the Application from the Applications Menu
+
+    1. Click Show Applications (the grid of dots, usually at the bottom-left of the screen).
+
+    2. A list of programs will appear.
+
+    3. Look for the application you just installed (for example, Visual Studio Code).
+
+    4. Click its name or icon to open it.
+
+**Installing Python**
+---------------------
+
+### **Windows**
+
+Open your browser and go to:
+
+[https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/) 
+
+    • Download Python 3 (latest version).
+
+    • Run the installer.
+
+    • IMPORTANT: Check “Add Python to PATH”.
+
+    • Click Install Now.
+
+    • Verify installation:
+
+Open Command Prompt and Check Python (Windows)
+
+            1. Click the Start button (bottom-left of your screen).
+
+            2. Type Command Prompt.
+
+            3. Click Command Prompt when it appears.
+
+    A black window will open. This is called the Command Prompt(CMD).
+
+            1. Click inside the black window.
+
+            2. Type this exactly the script below in the command prompt
+
+            3. Press the Enter key on your keyboard.
+
+You should see something like Python 3.x.x.
+
+### **macOS**
+
+Open your browser and go to:
+
+[https://www.python.org/downloads/macos/](https://www.python.org/downloads/macos/) 
+
+    • Download the macOS installer (.pkg).
+
+    • Open the file and follow the installation steps.
+
+    • Open Terminal and verify:
+
+**Note**: macOS includes an older Python by default to use python3.
+
+You should see something like Python 3.x.x.
+
+### **Ubuntu Linux**
+
+Python usually comes preinstalled. To make sure it’s up to date:
+
+    1. Open Terminal.
+
+    2. Type the command sudo apt update && sudo apt install -y python3 in the terminal as seen in the screenshot below
+
+    3. Verify installation
+
+Type the command python3 –version in the terminal as seen in the screenshot below.  (Note it is two hyphens before the version)
+
+You should see something like Python 3.x.x
+
+### **Understanding the Python Version Number**
+
+If Python is installed correctly, you will see text like:   Python 3.x.x  from running or executing the command python –version,
+
+The x.x part represents the exact version number of Python installed on your computer.
+
+What each part means
+
+    • 3 ➜ the major version
+
+        ◦ Python 3 is the modern and recommended version.
+
+    • x ➜  the minor version
+
+        ◦ This changes when new features are added.
+
+    • x ➜  the patch version
+
+        ◦ This changes when bugs or security issues are fixed.
+
+**Example:**
+
+If you see:Python 3.12.3 as shown in the screenshot above
+
+That means:
+
+    • 3 ➜  Python 3 (correct and recommended)
+
+    • 12 ➜  minor version
+
+    • 3 ➜  small bug-fix update
+
+Why this matters and why you don’t need to worry
+
+    • Any Python 3.x.x version is perfectly fine for beginners.
+
+    • Tutorials and examples work the same across Python 3 versions.
+
+    • Seeing 3.x.x just means: Python is installed and working
+
+ In short: the numbers may differ, but if it starts with Python 3, you’re good to go.
+
+If you see an error message instead, Python may not be installed or was not added correctly, this can be fixed by reinstalling Python and making sure “Add Python to PATH” is checked during installation.
+
+**Installing the Code Runner Extension in VS Code**
+---------------------------------------------------
+
+Open VS Code.
+
+    • Click the Extensions icon (left sidebar) or press:
+
+    • Windows/Linux: Ctrl + Shift + X
+
+    • macOS: Cmd + Shift + X
+
+    • Search for Code Runner.
+
+    • Install the extension published by Microsoft.
+
+    • Restart VS Code if prompted.
+
+Selecting the Python Interpreter
+
+    1. Open VS Code.
+
+    2. Press:
+
+        ◦ Windows/Linux: Ctrl + Shift + P
+
+        ◦ macOS: Cmd + Shift + P
+
+    3. Type Python: Select Interpreter.
+
+    4. Choose the Python version you installed (Python 3.x).
+
+**Hello World ! - Test Your Setup**
+-----------------------------------
+
+    1. Launch Visual Studio Code from your computer
+
+        1. Create a folder for your project
+
+        ◦ Click File ➜ Open Folder…
+
+        ◦ Create/select a folder like:
+
+            ▪ PythonScripts
+
+        ◦ Click Select Folder / Open
+
+        ◦ This makes VS Code treat it as a project workspace.
+
+    2. Create the file hello\_world.py
+
+        ◦ In the left sidebar (Explorer), click New File (paper icon) or right-click inside the folder ➜ New File
+
+        ◦ Type the filename:
+
+            ▪ hello\_world.py
+
+        3. Write the code
+
+        ◦ Click inside the editor and type:
+
+        ◦ print("Hello, World!")
+
+        ◦ Then save:
+
+            ▪ File ➜ Save or press:
+
+                • Windows/Linux: Ctrl + S
+
+                • macOS: Cmd + S
+
+         4. Select your Python interpreter
+
+            ▪ Look at the bottom-right (or bottom bar) for Python Interpreter (it may show something like Python 3.x)
+
+            ▪ Click it ➜ choose your installed Python (example: Python 3.12.x)
+
+If you don’t see it:
+
+            ▪ Press Ctrl + Shift + P (Cmd + Shift + P on Mac)
+
+            ▪ Search: Python: Select Interpreter
+
+            ▪ Pick the correct one
+
+### **Run using the VS Code Terminal**
+
+**Steps**
+
+1.  Open your  hello\_world.py file in VS Code.
+    
+2.  Open the terminal:
+    
+    *   **Windows/Linux:** \`Ctrl + \`\`
+        
+    *   **macOS:** \`Cmd + \`\`
+        
+3.  Make sure you’re in the file’s directory.
+    
+4.  Type the command below in the terminal:
+    
+
+python [hello\_world.](http://hello-world.js)py
+
+    Or on macOS
+
+python3 [hello\_world.](http://hello-world.js)py
+
+5 .  Press Enter
+
+**Run with the VS Code Debugger**
+
+**Steps**
+
+1.  Open the hello\_world.py file.
+    
+2.  Click **Run Without Debugging** (top menu bar) or **Ctrl + F5.**
+    
+3.  Choose **Python Debugger**.
+    
+
+If you see "Hello, World!" printed on the vs code terminal, it means your first program worked.
+
+This small success is an important first step in learning how to program in Python.
+
+**What does** "**Hello, World!**"**; mean in programming?**
+
+In programming, "Hello, World!" is a traditional first example used when learning a new programming language.
+
+It is usually the simplest program possible, designed to do just one thing:
+
+display a message on the screen or terminal.
+
+When beginners see "Hello, World!" appear as output, it confirms three important things:
+
+    1. The programming language is installed correctly
+
+    2. The code was written correctly
+
+    3. The program ran successfully
+
+Because it is simple and familiar, "Hello, World!" helps new learners focus on how programs work, without being distracted by complex logic.
+
+**Why do programmers use it?**
+
+Programmers use "Hello, World!" because it:
+
+    • Is easy to understand
+
+    • Requires very little code
+
+    • Provides immediate feedback
+
+    • Builds confidence for beginners
+
+Once this first program works, learners can move on to more advanced concepts knowing their setup is correct.
+
+Before proceeding, please ensure that you have completed the following steps:
+
+*   You have installed **Python** and **Visual Studio Code (VS Code)**, and configured the Python interpreter within VS Code.
+    
+*   Your hello\_world.py script runs successfully without any errors
+    
+*   You can launch VS Code, create a new folder, and create a Python file with the correct .py extension
+    
+*   You are able to run Python code using **any of the two methods**
+    
+*   All Python source code files are named using the .py file extension
+    
+*   You may henceforth copy and paste, or manually type, the source code into a file, ensuring proper indentation using four (4) spaces. Execute the file to observe the output.
+    
+*   Make it a consistent practice to write the code from this book examples directly into the file, run it, and review the results. Regular practice is essential for building proficiency and achieving mastery.
+    
+
+**Troubleshooting**
+-------------------
+
+When a programmer encounters an error, the most important thing to remember is that **you are not alone**. Programming has been around for many years, and **most errors have already been encountered and solved by other programmers**. Troubleshooting is a skill used by **both beginners and experienced programmers**.
+
+**1\. Stack Overflow**
+
+**Stack Overflow** is one of the most popular places where programmers ask and answer questions.
+
+*   Search your error message exactly as it appears
+    
+*   Read answers written by experienced programmers
+    
+*   Try the suggested solutions step by step
+    
+
+Many Python errors already have **multiple solutions** on Stack Overflow.
+
+**2\. Google Search**
+
+Using **Google** is often the fastest way to understand an error.
+
+*   Copy and paste the error message
+    
+*   Add words like _Python_ or _beginner_
+    
+*   Read blog posts, documentation, and tutorials
+    
+
+ Often, the first few results already explain the issue clearly.
+
+**3\. ChatGPT**
+
+**ChatGPT** can help explain errors in simple terms.
+
+*   Paste your code and error message
+    
+*   Ask for a beginner-friendly explanation
+    
+*   Try the suggested fixes and test them yourself
+    
+
+ChatGPT is especially helpful when you don’t understand the error message.
+
+**How to Use These Sources Effectively**
+
+Troubleshooting usually involves:
+
+1.  **Finding the error** using Stack Overflow, Google, or ChatGPT
+    
+2.  **Reading the explanations**
+    
+3.  **Trying out the solutions**
+    
+4.  **Testing your code again**
+    
+
+**Sometimes the first solution won’t work and that’s okay. Try another one.**
+
+**Troubleshooting Is for Everyone**
+
+Troubleshooting is not just for beginners. Even **experienced programmers troubleshoot every day**.
+
+No matter your skill level:
+
+*   Errors will happen
+    
+*   Debugging is normal
+    
+*   Learning how to fix issues makes you a better programmer
+    
+
+**When** "**Hello, World!**" **Doesn’t Work**
+
+If your simple **Hello, World** program does not work, the problem may be:
+
+*   Incorrect Python installation or setup
+    
+*   Typographical errors (typos)
+    
+*   Missing parentheses or quotation marks
+    
+*   Incorrect indentation
+    
+*   Case-sensitive mistakes (Print instead of print)
+    
+*   Running the file in the wrong environment
+    
+
+**Example:**
+
+Print("Hello, World")
+
+**Fix:**
+
+print("Hello, world")
+
+Python is **case-sensitive**, so small mistakes matter.
+
+**Why Troubleshooting Is Important**
+
+It is very important to:
+
+*   **Troubleshoot and fix errors before moving forward**
+    
+*   Make sure your setup works correctly
+    
+*   Understand why something failed
+    
+
+Skipping errors can cause **bigger problems later** and make learning more confusing.
+
+**Final Thought**
+
+Troubleshooting is not a sign of failure. It is a sign that you are **actively learning and improving**.
+
+Every programmer beginner or expert learns by:
+
+*   Making mistakes
+    
+*   Researching solutions
+    
+*   Testing fixes
+    
+*   Growing through experience
+    
+
+**Embracing Unfamiliar Terms on Your Programming Journey**
+----------------------------------------------------------
+
+When learning a new programming language, it’s normal to encounter unfamiliar keywords or terms used in explanations that don’t immediately make sense. Often, programming concepts depend on other ideas that are introduced later, which can make early chapters feel confusing or overwhelming.
+
+The key is to keep going. If a word or keyword doesn’t make sense at the moment, do a quick search to understand its basic meaning, then continue learning. As you progress, those same terms will be explained in more detail, and their purpose will become clearer through repeated use and examples.
+
+For instance, words like _import_, _function_, or _variable_ may seem meaningless if you’ve never programmed before. However, by briefly looking them up and continuing forward, you’ll eventually encounter full explanations that tie everything together. This cycle, confusion, curiosity, clarification, is a natural part of learning any programming language. With time and experience, what once felt unfamiliar will become second nature.
+
+
+------------------
 
 Where to Buy the Book
 
