@@ -695,7 +695,6 @@ print(numbers)  # Output: [1, 2, 3, 4]
 A strong understanding of variable scope is essential for writing reliable, efficient, and professional Python code.
 
 --------------------------------------
-# Chapter 2
 
 **Chapter 2: Installing Visual Studio Code and Python**
 =======================================================
